@@ -1,0 +1,69 @@
+.pyp {
+	position: relative;
+	width: 100%;
+	margin: 90px 0 90px;
+	text-align: center;
+	/* padding: 0 30px; */
+	background-size: 100% 100% !important;
+	background: rgba(0, 0, 0, 0) url(../images/parralax.jpg) no-repeat fixed 0 0;
+	height: 500px;
+}
+.pyp-container {
+	width: 100%;
+	float: none;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.pyp-container .pyp-title {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 2.2px;
+}
+.pyp-content {
+	border: 8px solid #f5d6d1;
+	padding: 13px 0px 13px 0px;
+	font-size: 66px;
+	margin-top: 20px;
+	clear: both;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	background: #fff;
+	@media (max-width: 991px) and (min-width: 768px){
+    font-size: 42px;
+}
+}
+.pyp-sub-title {
+	padding: 15px 60px 15px 60px;
+	clear: both;
+	@media (max-width: 991px) and (min-width: 768px){
+    padding: 15px 70px 15px 70px;
+    margin: 0 auto;
+}
+}
+.pyp-click-btn {
+	margin-top: 40px;
+	line-height: 35px;
+	a {
+		padding: 13px 35px;
+		background: #725ac1;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 12px;
+		text-decoration: none;
+		&:hover {
+			background: black;
+		}
+	}
+	@media (max-width: 991px) and (min-width: 768px){
+		line-height: normal;
+	}
+}

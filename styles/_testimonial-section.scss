@@ -1,0 +1,108 @@
+.testimonial {
+	width: 100%;
+	position: relative;
+	background: #fff;
+	text-align: center;
+	background: rgba(0, 0, 0, 0) url("../images/testimonial-bg.jpg") no-repeat
+		fixed 0 0;
+	background-size: auto;
+	background-size: 100% 100%;
+	margin-top: 90px;
+}
+.testimonial-container {
+	position: relative;
+	padding: 80px 0;
+	&:hover {
+		.testimonial-navigation {
+			opacity: 1;
+		}
+	}
+}
+.testimonial-navigation {
+	top: 50%;
+}
+.testimonial-block {
+	padding: 0 80px;
+}
+.testimonial-block-inner {
+	padding: 10px 0;
+}
+.testimonial-img {
+	margin-bottom: 30px;
+}
+.quatation {
+	position: relative;
+	z-index: 1;
+}
+.quatation::after {
+	content: "";
+	position: absolute;
+	color: #725ac1;
+	left: -122px;
+	top: -15px;
+	display: inline-block;
+	background: url(../images/quote.png) no-repeat scroll center;
+	height: 80px;
+	width: 80px;
+}
+.user-img {
+	border-radius: 4px;
+	height: 113px;
+	width: 113px;
+	margin: 0 auto;
+	img {
+		border: 1px solid #e5e5e5;
+		border-radius: 50%;
+		background-color: #fff;
+		position: relative;
+		z-index: 99999;
+	}
+}
+.user-review {
+	float: none;
+	display: inline-block;
+	width: 85%;
+	text-align: center;
+	padding-left: 25px;
+	position: relative;
+	@media (max-width: 1650px){
+    width: 57%;
+    padding-left: 15px;
+	}
+	@media (max-width: 1199px){
+		width: 68%;
+	}
+	@media (max-width: 991px) and (min-width: 768px){
+		width: 75%;
+	}
+	p {
+		font-size: 12px;
+		line-height: 22px;
+		letter-spacing: 0.9px;
+		color: #222;
+		margin-bottom: 17px;
+		margin-top: 0;
+		font-weight: 400;
+		padding: 0px 92px 0 92px;
+	}
+}
+.about-user {
+	a {
+		float: none;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: 0.4px;
+		color: #000;
+		font-family: Raleway, "bold";
+		font-weight: bold;
+	}
+	p {
+		font-size: 12px;
+		color: #222;
+		line-height: 22px;
+		letter-spacing: 0.4px;
+		text-transform: capitalize;
+		margin: 0;
+	}
+}

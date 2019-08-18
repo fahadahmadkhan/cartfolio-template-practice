@@ -1,0 +1,54 @@
+.brands {
+	position: relative;
+	width: 100%;
+	padding: 70px 0 70px 0;
+	clear: both;
+}
+.brands-container {
+	position: relative;
+	display: flex;
+	&:hover {
+		.brands-navigation {
+			opacity: 1;
+		}
+	}
+}
+
+.brand-item-container {
+	display: inline-block;
+	position: relative;
+	list-style: none;
+	text-align: center;
+	@media (max-width: 1199px) and (min-width: 992px) {	
+	width: 160px;
+	}
+}
+.brand-item-container5,
+.brand-item-container6 {
+	@media (max-width: 991px) and (min-width: 768px){
+    display: none;
+	}
+}
+.brand-item {
+	padding: 10px 15px 10px;
+	display: block;
+}
+.brand-image {
+	a {
+		img {
+			position: relative;
+			margin: 0 auto;
+			border: none;
+			opacity: 0.1;
+			vertical-align: middle;
+			max-width: 100%;
+			transform: scale(1);
+			transition: all 0.6s ease;
+			&:hover {
+				opacity: 1;
+				transform: scale(1.1);
+				transition: all 0.6s ease;
+			}
+		}
+	}
+}

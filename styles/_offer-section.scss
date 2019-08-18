@@ -1,0 +1,101 @@
+.offer-section {
+	box-sizing: border-box;
+	color: white;
+	width: 100%;
+	background: #725ac1;
+	padding: 12px 0px 0px 0px;
+	letter-spacing: 1.4px;
+	height: 40px;
+	position: relative;
+}
+.offer-section p {
+	margin: auto;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 10px;
+	@media (max-width: 1199px) and (min-width: 992px) {
+		font-size: 10px;
+	}
+	@media (max-width: 991px) and (min-width: 768px){
+    font-size: 9px;
+}
+}
+.offer-img {
+	display: block;
+	position: relative;
+	img {
+		height: auto;
+		border-style: none;
+		vertical-align: middle;
+		width: 100%;
+		position: relative;
+	}
+	ul {
+		top: 41%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		opacity: 0;
+		transition: all 0.5s ease-in-out;
+		li {
+			list-style: none;
+			a {
+				text-decoration: none;
+				display: block;
+				position: absolute;
+				top: 41%;
+				z-index: 8;
+				overflow: hidden;
+				cursor: pointer;
+				transition: all 0.5s ease-in-out;
+				font-size: 0px;
+				line-height: 1;
+				height: 50px;
+				width: 50px;
+				background: #000;
+				border: 1px solid #000;
+				&:hover {
+					background: #725ac1;
+					border-color: #725ac1;
+					height: 50px;
+					width: 50px;
+				}
+			}
+		}
+	}
+	&:hover {
+		ul {
+			opacity: 1;
+		}
+	}
+}
+
+.flex-direction-nav .flex-nav-prev .flex-prev {
+	left: 30px;
+}
+.flex-direction-nav .flex-nav-next .flex-next {
+	right: 30px;
+}
+.flex-prev::after {
+	content: "\E314";
+	font-family: "Material Icons";
+	position: absolute;
+	font-size: 48px;
+	right: 0;
+	top: 10px;
+	line-height: 29px;
+	left: 0;
+	color: #fff;
+}
+.flex-next::after {
+	content: "\E315";
+	font-family: "Material Icons";
+	position: absolute;
+	font-size: 48px;
+	right: 0;
+	top: 10px;
+	line-height: 29px;
+	left: 0;
+	color: #fff;
+}
