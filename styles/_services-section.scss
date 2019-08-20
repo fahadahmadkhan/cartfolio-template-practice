@@ -5,6 +5,10 @@
 	@media (max-width: 991px) and (min-width: 768px) {
 		margin: 0 auto;
 	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		margin: 0 auto;
+	}
 }
 
 .service-block-container {
@@ -22,6 +26,11 @@
 	@media (max-width: 991px) and (min-width: 768px) {
 		width: calc(50% - 4px);
 	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		width: calc(50% - 4px);
+	}
+
 }
 
 .services-block-container:first-child {

@@ -1,3 +1,9 @@
+.newsletter {
+	@media (max-width: 767px) and (min-width: 480px) {
+		padding: 0 15px 0 15px;
+	}
+}
+
 .nl1 {
 	position: relative;
 	text-align: center;
@@ -12,6 +18,10 @@
 	}
 
 	@media (max-width: 991px) and (min-width: 768px) {
+		width: 100%;
+	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
 		width: 100%;
 	}
 }
@@ -114,6 +124,11 @@
 		width: 73%;
 		height: 44px;
 	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		width: 60%;
+		height: 44px;
+	}
 }
 
 .subscribe-btn {
@@ -146,6 +161,12 @@
 		height: 44px;
 	}
 
+	@media (max-width: 767px) and (min-width: 480px) {
+		font-size: 10px;
+		width: 60%;
+		height: 44px;
+	}
+
 	&:hover {
 		background-color: black;
 	}
@@ -169,6 +190,11 @@
 		top: 30px;
 	}
 
+	@media (max-width: 767px) and (min-width: 480px) {
+		width: 100%;
+		top: 30px;
+	}
+
 	h1 {
 		margin-top: 10px;
 		font-weight: 900;
@@ -185,6 +211,11 @@
 		}
 
 		@media (max-width: 991px) and (min-width: 768px) {
+			margin-top: 22px;
+			font-size: 24px;
+		}
+
+		@media (max-width: 767px) and (min-width: 480px) {
 			margin-top: 22px;
 			font-size: 24px;
 		}
@@ -209,6 +240,11 @@
 			letter-spacing: 2.6px;
 			font-size: 12px;
 		}
+
+		@media (max-width: 767px) and (min-width: 480px) {
+			letter-spacing: 2.6px;
+			font-size: 12px;
+		}
 	}
 
 	p {
@@ -218,6 +254,11 @@
 		margin-bottom: 0;
 
 		@media (max-width: 991px) and (min-width: 768px) {
+			margin-top: 28px;
+			font-size: 10px;
+		}
+
+		@media (max-width: 767px) and (min-width: 480px) {
 			margin-top: 28px;
 			font-size: 10px;
 		}

@@ -14,10 +14,18 @@
 	@media (max-width: 991px) and (min-width: 768px) {
 		width: 100%;
 	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		width: 100%
+	}
 }
 
 .blog-block-container2 {
 	@media (max-width: 991px) and (min-width: 768px) {
+		display: none;
+	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
 		display: none;
 	}
 }

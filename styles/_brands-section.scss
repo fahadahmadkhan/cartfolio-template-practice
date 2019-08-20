@@ -9,6 +9,10 @@
 	position: relative;
 	display: flex;
 
+	@media (max-width: 767px) and (min-width: 480px) {
+		justify-content: space-around;
+	}
+
 	&:hover {
 		.brands-navigation {
 			opacity: 1;
@@ -30,6 +34,15 @@
 .brand-item-container5,
 .brand-item-container6 {
 	@media (max-width: 991px) and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.brand-item-container3,
+.brand-item-container4,
+.brand-item-container5,
+.brand-item-container6 {
+	@media (max-width: 767px) and (min-width: 480px) {
 		display: none;
 	}
 }

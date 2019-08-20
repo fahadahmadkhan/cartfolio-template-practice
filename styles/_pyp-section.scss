@@ -3,10 +3,13 @@
 	width: 100%;
 	margin: 90px 0 90px;
 	text-align: center;
-	/* padding: 0 30px; */
 	background-size: 100% 100% !important;
 	background: rgba(0, 0, 0, 0) url(../images/parralax.jpg) no-repeat fixed 0 0;
 	height: 500px;
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		height: auto;
+	}
 }
 
 .pyp-container {
@@ -19,6 +22,11 @@
 	margin-right: auto;
 	padding-left: 0px;
 	padding-right: 0px;
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		padding-top: 50px !important;
+		padding-bottom: 20px;
+	}
 }
 
 .pyp-container .pyp-title {
@@ -26,6 +34,13 @@
 	text-transform: uppercase;
 	font-size: 13px;
 	letter-spacing: 2.2px;
+}
+
+.pyp-title {
+	@media (max-width: 767px) and (min-width: 480px) {
+		font-size: 10px !important;
+		letter-spacing: 1.2px !important;
+	}
 }
 
 .pyp-content {
@@ -41,6 +56,14 @@
 
 	@media (max-width: 991px) and (min-width: 768px) {
 		font-size: 42px;
+	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		font-size: 42px;
+	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		font-size: 28px;
 	}
 }
 
@@ -74,5 +97,10 @@
 
 	@media (max-width: 991px) and (min-width: 768px) {
 		line-height: normal;
+	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		margin-top: 20px;
+		line-height: 35px;
 	}
 }

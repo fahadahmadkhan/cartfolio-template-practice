@@ -9,6 +9,12 @@
     text-align: center;
     clear: both;
     display: inline-block;
+
+    @media (max-width: 767px) and (min-width: 480px) {
+        padding: 0 15px 0 15px;
+        width: unset;
+        display: block;
+    }
 }
 
 .showcase-nav-container {
@@ -62,6 +68,10 @@
             }
 
             @media (max-width: 991px) and (min-width: 768px) {
+                padding: 17px 10px;
+            }
+
+            @media (max-width: 767px) and (min-width: 480px) {
                 padding: 17px 10px;
             }
         }
@@ -273,6 +283,13 @@
             display: none !important;
         }
     }
+
+    // .showcase-product3,
+    // .showcase-product4 {
+    //     @media (max-width: 767px) and (min-width: 480px) {
+    //         display: none !important;
+    //     }
+    // }
 }
 
 .discount-flag {

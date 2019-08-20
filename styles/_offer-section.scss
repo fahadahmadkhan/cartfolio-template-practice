@@ -7,6 +7,10 @@
 	letter-spacing: 1.4px;
 	height: 40px;
 	position: relative;
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		display: none;
+	}
 }
 
 .offer-section p {
