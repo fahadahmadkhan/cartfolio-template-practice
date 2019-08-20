@@ -1,6 +1,7 @@
 .showcase1 {
     margin-top: 90px !important;
 }
+
 .showcase {
     margin: 0;
     width: 100%;
@@ -9,12 +10,15 @@
     clear: both;
     display: inline-block;
 }
+
 .showcase-nav-container {
     clear: both;
     border: 1px solid #dedede;
 }
+
 .showcase-nav {
     line-height: 10px;
+
     ul {
         text-align: center;
         width: 100%;
@@ -28,6 +32,7 @@
         margin-top: 0;
         list-style: none;
     }
+
     li {
         margin-bottom: -1px;
         position: relative;
@@ -37,6 +42,7 @@
         border-bottom: none;
         border-left: none;
         display: inline-block;
+
         a {
             text-decoration: none;
             display: block;
@@ -51,37 +57,44 @@
             text-transform: uppercase;
             font-weight: bold;
 
-            @media (max-width: 1199px) and (min-width: 992px) {	
-            padding: 17px 65px;
+            @media (max-width: 1199px) and (min-width: 992px) {
+                padding: 17px 65px;
             }
-            @media (max-width: 991px) and (min-width: 768px){
-    padding: 17px 10px;
-}
+
+            @media (max-width: 991px) and (min-width: 768px) {
+                padding: 17px 10px;
+            }
         }
     }
 }
+
 .showcase-nav-item:first-child {
     background: #fff;
     border-bottom: none !important;
     font-weight: bold;
 }
+
 .showcase-nav-item:last-child {
     border-right: none;
 }
+
 .showcase-tab-container {
     padding: 0px;
     border: none;
     background: none;
     line-height: 24px;
     display: block;
-    @media (max-width: 991px) and (min-width: 768px){
-    margin-top: 40px;
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        margin-top: 40px;
+    }
 }
-}
+
 .showcase-products {
     position: relative;
     padding: 0 15px;
     margin: 30px 0 30px 0;
+
     ul {
         display: flex;
         list-style: none;
@@ -91,15 +104,18 @@
         line-height: 24px;
         text-align: left;
     }
+
     li {
         width: 300px;
         display: block;
         position: relative;
         padding-right: 15px;
         padding-left: 15px;
-        @media (max-width: 991px) and (min-width: 768px){
-        width: 246px;
+
+        @media (max-width: 991px) and (min-width: 768px) {
+            width: 246px;
         }
+
         img {
             text-align: center;
             display: inline-block;
@@ -107,31 +123,38 @@
             max-width: 100%;
         }
     }
+
     &:hover {
         .showcase-navigation {
             opacity: 1;
         }
     }
 }
+
 .showcase-navigation {
     a.prev {
         left: -17px;
+
         @media (max-width: 1650px) {
-        left: 0;
+            left: 0;
         }
     }
+
     a.next {
         right: -17px;
+
         @media (max-width: 1650px) {
             right: 0;
-            }
+        }
     }
 }
+
 .product-description {
     text-align: left;
     margin-top: 25px;
     padding: 15px;
 }
+
 .showcase-product-head {
     text-transform: capitalize;
     margin-bottom: 8px;
@@ -139,6 +162,7 @@
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.1;
+
     // text-overflow: ellipsis;
     // overflow: hidden;
     // white-space: nowrap;
@@ -154,6 +178,7 @@
         text-decoration: none;
     }
 }
+
 .showcase-product-subhead {
     color: #222;
     font-size: 18px;
@@ -163,6 +188,7 @@
     letter-spacing: 0.2px;
     font-family: "Montserrat", sans-serif;
 }
+
 .regular-price {
     color: #bebebe;
     text-decoration: line-through;
@@ -191,12 +217,15 @@
     line-height: 32px;
     letter-spacing: 0.4px;
 }
+
 .navigation a.prev::before {
     content: "\E314";
 }
+
 .navigation a.next::before {
     content: "\E315";
 }
+
 .navigation a::before {
     font-family: "Material Icons";
     position: absolute;
@@ -217,6 +246,7 @@
     transform: scaleX(0);
     margin: 0 auto;
 }
+
 .showcase-product1,
 .showcase-product2,
 .showcase-product3,
@@ -226,21 +256,25 @@
             opacity: 1;
             transform: scaleX(1);
         }
+
         .new {
             opacity: 1;
         }
+
         img {
             opacity: 0;
         }
     }
 }
+
 .showcase1 {
     .showcase-product4 {
-    @media (max-width: 991px) and (min-width: 768px){
-    display: none !important;
+        @media (max-width: 991px) and (min-width: 768px) {
+            display: none !important;
+        }
     }
- }
 }
+
 .discount-flag {
     background: #725ac1;
     position: absolute;
@@ -251,6 +285,7 @@
     z-index: 1;
     border-radius: 50%;
 }
+
 .discount-flag-text {
     z-index: 2;
     color: #fff;
@@ -261,6 +296,7 @@
     vertical-align: baseline;
     line-height: 24px;
 }
+
 .new {
     opacity: 0;
     top: 10px;

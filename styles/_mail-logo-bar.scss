@@ -3,17 +3,21 @@
 		display: none;
 	}
 }
+
 .search-bar {
 	float: left;
 	position: relative;
 	width: auto;
 	padding: 55px 0 0px 20px;
+
 	@media (max-width: 1199px) and (min-width: 992px) {
 		padding-left: 15px;
 	}
+
 	form {
 		display: flex;
 	}
+
 	form input[type="text"] {
 		display: inline-block;
 		padding: 0;
@@ -30,6 +34,7 @@
 		transition: all 0.6s ease-in-out;
 		letter-spacing: 1px;
 	}
+
 	form button[type="submit"] {
 		background: transparent;
 		border: 1px solid #fff;
@@ -54,20 +59,23 @@
 	top: 81px;
 	margin: 0 auto;
 	cursor: pointer;
+
 	@media (max-width: 1199px) and (min-width: 992px) {
 		width: 16%;
 		top: 94px;
-		}
-		@media (max-width: 991px) and (min-width: 768px) {
-    width: auto;
-    padding: 15px 0;
-    float: left;
-    width: 200px;
-    margin: 0 auto;
-	display: inline-block;
-	top: 0;
+	}
+
+	@media (max-width: 991px) and (min-width: 768px) {
+		width: auto;
+		padding: 15px 0;
+		float: left;
+		width: 200px;
+		margin: 0 auto;
+		display: inline-block;
+		top: 0;
+	}
 }
-}
+
 .right-section {
 	display: flex;
 	justify-content: flex-end;
@@ -81,14 +89,17 @@
 	border: 1px solid #fff;
 	border-right: 1px solid #e6e6e6;
 }
+
 .account {
 	@media (max-width: 1199px) and (min-width: 992px) {
-	padding: 55px 0 0 28px !important;
+		padding: 55px 0 0 28px !important;
 	}
 }
+
 .contact-icon {
 	background: #fff url("../images/user.png") no-repeat scroll center;
 }
+
 .user .user-subhead {
 	color: #725ac1;
 	font-size: 11px;
@@ -98,21 +109,25 @@
 	font-weight: 600;
 	letter-spacing: 1px;
 }
-.user-head, .cart-head {
+
+.user-head,
+.cart-head {
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #222;
 	font-weight: 700;
 	letter-spacing: 1px;
-	
+
 	@media (max-width: 1199px) and (min-width: 992px) {
 		font-size: 10px !important;
 
+	}
 }
-}
+
 .cart-icon {
 	background: #fff url("../images/basket.png") no-repeat scroll center;
 }
+
 .cart-subhead {
 	color: #725ac1;
 	font-size: 11px;
@@ -122,22 +137,28 @@
 	font-weight: 600;
 	letter-spacing: 0.9px;
 }
+
 .cart-head {
 	letter-spacing: 0.9px;
 }
+
 .user-option {
 	display: inline-block;
 	position: relative;
 	padding: 58px 10px 0 25px;
 }
+
 .shopping {
 	padding: 55px 28px 0 30px;
+
 	@media (max-width: 1199px) and (min-width: 992px) {
-	padding: 52px 20px 0 20px;
+		padding: 52px 20px 0 20px;
 	}
+
 	.cart-head {
 		line-height: 20px;
 	}
+
 	.cart-subhead {
 		margin-top: 0;
 	}

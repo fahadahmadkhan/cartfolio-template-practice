@@ -381,7 +381,8 @@ header {
   letter-spacing: 1px;
 }
 
-.user-head, .cart-head {
+.user-head,
+.cart-head {
   font-size: 12px;
   text-transform: uppercase;
   color: #222;
@@ -390,7 +391,8 @@ header {
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-  .user-head, .cart-head {
+  .user-head,
+  .cart-head {
     font-size: 10px !important;
   }
 }
@@ -2059,7 +2061,7 @@ footer {
 
 @media (max-width: 991px) and (min-width: 768px) {
   .footer-before {
-    display: none;
+    margin-top: 39px;
   }
 }
 
@@ -2069,11 +2071,33 @@ footer {
   display: flex;
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-before-container {
+    display: block;
+    padding: 39px 0 39px 0;
+  }
+}
+
 .footer-column {
   float: none;
   position: relative;
   max-width: 173px;
   text-align: left;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-column {
+    max-width: unset;
+    width: 100% !important;
+    padding: 0 15px !important;
+    text-align: left;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-column-list {
+    display: none !important;
+  }
 }
 
 .footer-column1 {
@@ -2085,14 +2109,27 @@ footer {
 
 @media (max-width: 1650px) {
   .footer-column1 {
-    width: 17.5%;
+    width: 15.5%;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .footer-column1 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-column1 {
+    display: block;
+    border: none;
+    padding: 0;
   }
 }
 
 .footer-column1-block {
   padding: 85px 0 155px 0;
   float: left;
-  display: block;
 }
 
 @media (max-width: 1650px) {
@@ -2104,6 +2141,13 @@ footer {
 @media (max-width: 1199px) and (min-width: 992px) {
   .footer-column1-block {
     padding: 90px 0 171px 0;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-column1-block {
+    float: none;
+    padding: 0;
   }
 }
 
@@ -2119,15 +2163,31 @@ footer {
   text-transform: uppercase;
 }
 
+.footer-column-head:hover .material-icons.add {
+  display: none;
+}
+
+.footer-column-head:hover .material-icons.remove {
+  display: inline;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-column-head {
+    margin-bottom: 0;
+    cursor: pointer;
+    padding: 10px 0;
+  }
+}
+
 .footer-column1-appstore {
   padding: 6px 0 0 0;
 }
 
 .appstore-block {
   margin-bottom: 14px;
-  float: left;
   width: auto;
   text-decoration: none;
+  display: inline-block;
 }
 
 .appstore-block img {
@@ -2137,6 +2197,12 @@ footer {
   vertical-align: middle;
   max-width: 100%;
   cursor: pointer;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .appstore-block img {
+    display: block;
+  }
 }
 
 .footer-column-cntr ul {
@@ -2174,6 +2240,17 @@ footer {
   }
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-column2,
+  .footer-column3 {
+    vertical-align: unset;
+    max-width: unset;
+    width: unset;
+    display: block;
+    padding: 0;
+  }
+}
+
 @media (max-width: 1199px) and (min-width: 992px) {
   .footer-column3 {
     padding: 90px 0 0 0;
@@ -2187,7 +2264,7 @@ footer {
   width: 19%;
   margin-right: 0;
   max-width: none;
-  border-right: 1px solid #dedede !important;
+  border-right: 1px solid #dedede;
 }
 
 @media (max-width: 1650px) {
@@ -2199,7 +2276,16 @@ footer {
 @media (max-width: 1199px) and (min-width: 992px) {
   .footer-column4 {
     padding: 90px 0 214px 6px;
-    width: 17%;
+    width: auto;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-column4 {
+    display: block;
+    width: unset;
+    border: none;
+    padding: 0;
   }
 }
 
@@ -2266,9 +2352,27 @@ footer {
   }
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-column5 {
+    display: block;
+    width: unset;
+    padding: 0;
+  }
+}
+
 .footer-column5-service-block {
   margin: 0 auto 18px;
   position: relative;
+}
+
+.footer-column5-head {
+  display: none;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-column5-head {
+    display: block;
+  }
 }
 
 .footer-column5-imagdiv {
@@ -2322,6 +2426,7 @@ footer {
   right: 0;
   left: 0;
   text-align: center;
+  text-align: unset;
 }
 
 .footer-column6 ul {
@@ -2399,6 +2504,27 @@ footer {
   background: #725ac1 url(../images/footer-social.png) no-repeat scroll -28px -90px;
 }
 
+.accordian {
+  display: none;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .accordian {
+    display: inline;
+    float: right !important;
+  }
+}
+
+.material-icons.add,
+.material-icons.remove {
+  font-size: 20px;
+  color: #725ac1;
+}
+
+.material-icons.remove {
+  display: none;
+}
+
 .footer-after {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -2408,6 +2534,18 @@ footer {
   width: 100%;
   text-align: center;
   padding: 10px 10px 10px 10px;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .footer-after-container {
@@ -2423,10 +2561,24 @@ footer {
   position: relative;
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-left {
+    width: 100%;
+    float: none;
+    margin-top: 8px;
+  }
+}
+
 .footer-left p {
   margin: 0;
   left: -5.5px;
   position: relative;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-left p {
+    left: unset;
+  }
 }
 
 .footer-left p a {
@@ -2441,6 +2593,14 @@ footer {
   display: inline-block;
   right: 16%;
   position: relative;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-right {
+    width: 100%;
+    right: unset;
+    top: 1px;
+  }
 }
 
 .payment p {

@@ -6,7 +6,13 @@
 	width: 100%;
 	text-align: center;
 	padding: 10px 10px 10px 10px;
+
+	@media (max-width: 991px) and (min-width: 768px) {
+		display: flex;
+		flex-direction: column-reverse
+	}
 }
+
 .footer-after-container {
 	margin-left: 0;
 	margin-right: 0;
@@ -18,10 +24,22 @@
 	float: left;
 	padding: 0px;
 	position: relative;
+
+	@media (max-width: 991px) and (min-width: 768px) {
+		width: 100%;
+		float: none;
+		margin-top: 8px;
+	}
+
 	p {
 		margin: 0;
 		left: -5.5px;
 		position: relative;
+
+		@media (max-width: 991px) and (min-width: 768px) {
+			left: unset;
+		}
+
 		a {
 			color: #fff;
 			font-size: 13px;
@@ -31,21 +49,32 @@
 		}
 	}
 }
+
 .footer-right {
 	display: inline-block;
 	right: 16%;
 	position: relative;
+
+	@media (max-width: 991px) and (min-width: 768px) {
+		width: 100%;
+		right: unset;
+		top: 1px;
+	}
 }
+
 .payment {
 	p {
 		display: inline-block;
 		padding: 0 2px;
 		margin: 0;
+
 		a {
 			text-decoration: none;
+
 			&:hover {
 				color: black;
 			}
+
 			img {
 				width: 44px;
 				height: 25px;

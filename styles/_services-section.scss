@@ -1,10 +1,12 @@
 .services-container {
 	margin: -78px auto 0px;
 	position: relative;
-	@media (max-width: 991px) and (min-width: 768px){
+
+	@media (max-width: 991px) and (min-width: 768px) {
 		margin: 0 auto;
 	}
 }
+
 .service-block-container {
 	width: calc(25% - 12px);
 	text-align: center;
@@ -12,19 +14,24 @@
 	padding-left: 0;
 	display: inline-block;
 	padding-right: 0;
+
 	@media (max-width: 1199px) and (min-width: 992px) {
-	width: auto;
+		width: auto;
 	}
-	@media (max-width: 991px) and (min-width: 768px){
-	width: calc(50% - 4px);
+
+	@media (max-width: 991px) and (min-width: 768px) {
+		width: calc(50% - 4px);
 	}
 }
+
 .services-block-container:first-child {
 	padding-left: 0;
 }
+
 .services-block-container:last-child {
 	padding-right: 0;
 }
+
 .service-block {
 	text-align: center;
 	margin: 0 auto;
@@ -33,24 +40,30 @@
 	border-radius: 4px;
 	float: none;
 	position: relative;
+
 	&:hover {
 		.imagdiv1 {
 			background-position: 21px 26px;
 		}
+
 		.imagdiv2 {
 			background-position: 22px -260px;
 		}
+
 		.imagdiv3 {
 			background-position: 22px -545px;
 		}
+
 		.imagdiv4 {
 			background-position: 22px -830px;
 		}
 	}
-	@media (max-width: 991px) and (min-width: 768px){
-	padding: 30px 10px 30px;
+
+	@media (max-width: 991px) and (min-width: 768px) {
+		padding: 30px 10px 30px;
 	}
 }
+
 .imagdiv {
 	transform: perspective(1px) translateZ(0);
 	background: url(../images/services.png) no-repeat #725ac1;
@@ -66,12 +79,15 @@
 .imagdiv1 {
 	background-position: 21px -117px;
 }
+
 .imagdiv2 {
 	background-position: 22px -402px;
 }
+
 .imagdiv3 {
 	background-position: 22px -689px;
 }
+
 .imagdiv4 {
 	background-position: 22px -975px;
 }
@@ -80,6 +96,7 @@
 	margin-left: 10px;
 	width: auto;
 	display: inline-block;
+
 	h1 {
 		color: #000;
 		text-transform: uppercase;
@@ -90,6 +107,7 @@
 		font-weight: bold;
 		line-height: 16px;
 	}
+
 	p {
 		font-size: 12px;
 		letter-spacing: 0;

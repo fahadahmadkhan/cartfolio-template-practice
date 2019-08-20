@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "editor.formatOnType": true,
+    "editor.smoothScrolling": true,
+    "editor.fontLigatures": true
+}
