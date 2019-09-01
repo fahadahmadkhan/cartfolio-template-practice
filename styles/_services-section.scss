@@ -9,6 +9,10 @@
 	@media (max-width: 767px) and (min-width: 480px) {
 		margin: 0 auto;
 	}
+
+	@media (max-width: 479px) {
+		margin: 0 auto;
+	}
 }
 
 .service-block-container {
@@ -29,6 +33,10 @@
 
 	@media (max-width: 767px) and (min-width: 480px) {
 		width: calc(50% - 4px);
+	}
+
+	@media (max-width: 479px) {
+		width: 100%;
 	}
 
 }
@@ -71,6 +79,11 @@
 	@media (max-width: 991px) and (min-width: 768px) {
 		padding: 30px 10px 30px;
 	}
+
+	@media (max-width: 479px) {
+		padding: 30px 10px 30px;
+	}
+
 }
 
 .imagdiv {
@@ -126,5 +139,10 @@
 		margin: 0;
 		font-family: "Montserrat", sans-serif;
 		font-weight: 400;
+
+		@media (max-width: 494px) {
+			font-size: 14px;
+			letter-spacing: 0.7px;
+		}
 	}
 }

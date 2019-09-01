@@ -16,6 +16,11 @@
 		display: flex;
 		flex-direction: column-reverse
 	}
+
+	@media (max-width: 479px) {
+		display: flex;
+		flex-direction: column-reverse
+	}
 }
 
 .footer-after-container {
@@ -42,6 +47,12 @@
 		margin-top: 8px;
 	}
 
+	@media (max-width: 479px) {
+		width: 100%;
+		float: none;
+		margin-top: 8px;
+	}
+
 	p {
 		margin: 0;
 		left: -5.5px;
@@ -52,6 +63,10 @@
 		}
 
 		@media (max-width: 767px) and (min-width: 480px) {
+			left: unset;
+		}
+
+		@media (max-width: 479px) {
 			left: unset;
 		}
 
@@ -77,6 +92,12 @@
 	}
 
 	@media (max-width: 767px) and (min-width: 480px) {
+		width: 100%;
+		right: unset;
+		top: 1px;
+	}
+
+	@media (max-width: 479px) {
 		width: 100%;
 		right: unset;
 		top: 1px;

@@ -42,6 +42,24 @@ body {
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
 
+	a {
+		position: absolute;
+		line-height: 36px;
+		padding: 0;
+		height: 35px;
+		width: 35px;
+		cursor: pointer;
+		overflow: hidden;
+		font-size: 0.001px;
+		transition: all 0.3s ease 0s;
+		background: #fff;
+
+		@media (max-width: 479px) {
+			height: 25px;
+			width: 25px;
+		}
+	}
+
 	a.prev {
 		left: 0;
 		border: 1px solid #e6e6e6;
@@ -60,18 +78,56 @@ body {
 			background: #725ac1;
 			border: #725ac1;
 		}
+
 	}
+
+	@media (max-width: 767px) {
+		opacity: 1;
+	}
+
+
 }
 
-.navigation a {
-	position: absolute;
-	line-height: 36px;
-	padding: 0;
-	height: 35px;
-	width: 35px;
+.btn {
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
 	cursor: pointer;
-	overflow: hidden;
-	font-size: 0.001px;
-	transition: all 0.3s ease 0s;
-	background: #fff;
+	user-select: none;
+	border: 1px solid #725ac1;
+	padding: 2px 16px;
+	font-size: 13px;
+	text-transform: uppercase;
+	background: #725ac1;
+	transition: all 0.6s ease;
+	color: #fff;
+	position: relative;
+	line-height: 32px;
+	letter-spacing: 0.4px;
+}
+
+.navigation a.prev::before {
+	content: "\E314";
+}
+
+.navigation a.next::before {
+	content: "\E315";
+}
+
+.navigation a::before {
+	font-family: "Material Icons";
+	position: absolute;
+	font-size: 22px;
+	right: 0;
+	top: 5px;
+	line-height: 24px;
+	left: 0;
+	color: #e6e6e6;
+
+	@media (max-width: 479px) {
+		font-size: 16px;
+		top: 0;
+	}
 }

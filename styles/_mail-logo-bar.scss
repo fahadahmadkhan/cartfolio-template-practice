@@ -6,6 +6,10 @@
 	@media (max-width: 767px) and (min-width: 480px) {
 		display: none;
 	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		display: none;
+	}
 }
 
 .search-bar {
@@ -54,29 +58,51 @@
 	}
 }
 
-.main-logo img {
-	z-index: 9;
-	padding: 0;
-	left: 0;
-	right: 0;
-	position: absolute;
-	top: 81px;
-	margin: 0 auto;
-	cursor: pointer;
-
-	@media (max-width: 1199px) and (min-width: 992px) {
-		width: 16%;
-		top: 94px;
+.main-logo {
+	@media (max-width: 991px) and (min-width: 768px) {
+		text-align: center;
 	}
 
-	@media (max-width: 991px) and (min-width: 768px) {
-		width: auto;
-		padding: 15px 0;
-		float: left;
-		width: 200px;
+	img {
+		z-index: 9;
+		padding: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		top: 81px;
 		margin: 0 auto;
-		display: inline-block;
-		top: 0;
+		cursor: pointer;
+
+		@media (max-width: 1199px) and (min-width: 992px) {
+			width: 16%;
+			top: 94px;
+		}
+
+		@media (max-width: 991px) and (min-width: 768px) {
+			width: auto;
+			padding: 15px 0;
+			width: 200px;
+			margin: 0 auto;
+			top: 0;
+		}
+
+		@media (max-width: 767px) and (min-width: 480px) {
+			width: auto;
+			padding: 15px 0;
+			width: 160px;
+			margin: 0 auto;
+			top: 0;
+			position: relative;
+		}
+
+		@media (max-width: 479px) and (min-width: 320px) {
+			width: auto;
+			padding: 15px 0;
+			width: 115px;
+			margin: 0 auto;
+			top: 0;
+			position: relative;
+		}
 	}
 }
 
@@ -165,5 +191,184 @@
 
 	.cart-subhead {
 		margin-top: 0;
+	}
+}
+
+.header-hd {
+	width: 100%;
+	z-index: 1;
+	display: none;
+
+
+
+	@media (max-width: 991px) and (min-width: 768px) {
+		width: 100%;
+		z-index: 1;
+		display: block;
+	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		width: 100%;
+		z-index: 1;
+		display: block;
+
+	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		width: 100%;
+		z-index: 1;
+		display: block;
+
+	}
+}
+
+.header-container-hd {
+	background: #fff;
+	padding: 0 15px;
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		background: #fff;
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		background: #fff;
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+
+}
+
+.header-left-hd {
+	@media (max-width: 991px) and (min-width: 768px) {
+		display: block;
+		margin: 17px 0 0 0;
+		padding: 11px 0;
+	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		display: block;
+		margin: 20px 20px 20px 15px;
+		padding: 11px 0;
+	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		margin: 20px 5px 0 5px;
+		padding: 4px 0;
+	}
+}
+
+.hidden-menu-icon {
+	margin-top: 9px;
+	margin-right: 5px;
+
+	i {
+		font-size: 22px;
+	}
+
+	@media (max-width: 479px) {
+		margin-top: 4px;
+		margin-right: 0;
+	}
+}
+
+.header-right-hd {
+	@media (max-width: 991px) and (min-width: 768px) {
+		display: block;
+		margin: 24px 0px 24px 0;
+		display: flex;
+	}
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		display: block;
+		margin: 20px 0 20px 0;
+		display: flex;
+	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+
+		display: block;
+		margin: 20px 0 0 0;
+		display: flex;
+	}
+}
+
+.hiiden-search-button {
+	cursor: pointer;
+	font-size: 0;
+	height: 40px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	width: 40px;
+	z-index: 5005;
+	float: right;
+	border: 1px solid #fff;
+	background: url(/images/hidden-search.png) no-repeat scroll center;
+	border: none;
+
+	@media (max-width: 479px) {
+		height: 30px;
+		width: 30px;
+	}
+}
+
+.hidden-user-button {
+	background: url(/images/hidden-user.png) no-repeat scroll center !important;
+	float: left;
+	width: 50px;
+	height: 40px;
+	border: none;
+
+	@media (max-width: 479px) {
+		height: 30px;
+		width: 30px;
+	}
+}
+
+.hidden-cart {
+	margin: 0 10px 0 0;
+}
+
+.hidden-cart-button {
+	background: url(/images/hidden-cart.png) no-repeat scroll center !important;
+	border: none;
+	float: left;
+	width: 50px;
+	height: 40px;
+	border: none;
+
+	@media (max-width: 479px) {
+		height: 30px;
+		width: 30px;
+	}
+}
+
+.hidden-mobile-count {
+	color: #fff;
+	background: #222;
+	height: 15px;
+	width: 15px;
+	font-size: 10px;
+	font-weight: 700;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	right: 20px;
+	top: 29px;
+
+	@media (max-width: 767px) and (min-width: 480px) {
+		right: 5px;
+		top: 25px;
+	}
+
+	@media (max-width: 479px) {
+		right: 0;
+		top: 20px;
 	}
 }

@@ -2,6 +2,10 @@
 	@media (max-width: 767px) and (min-width: 480px) {
 		padding: 0 15px 0 15px;
 	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		padding: 0 15px 0 15px;
+	}
 }
 
 .nl1 {
@@ -23,6 +27,11 @@
 
 	@media (max-width: 767px) and (min-width: 480px) {
 		width: 100%;
+	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		width: 100%;
+		margin-bottom: 30px;
 	}
 }
 
@@ -64,6 +73,11 @@
 		@media (max-width: 1199px) and (min-width: 992px) {
 			font-size: 34px;
 		}
+
+		@media (max-width: 479px) {
+			font-size: 24px;
+		}
+
 	}
 
 	h3 {
@@ -77,6 +91,10 @@
 		color: #725ac1;
 		font-family: "Raleway", sans-serif;
 		text-transform: uppercase;
+
+		@media (max-width: 479px) {
+			font-size: 11px;
+		}
 	}
 
 	p {
@@ -92,6 +110,12 @@
 
 		@media (max-width: 1199px) and (min-width: 992px) {
 			padding: 10px 20px;
+		}
+
+		@media (max-width: 479px) {
+			font-size: 11px;
+			font-size: 10px;
+			padding: 27px 20px;
 		}
 	}
 }
@@ -129,6 +153,13 @@
 		width: 60%;
 		height: 44px;
 	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		font-size: 11px;
+		width: 60%;
+		height: 49px;
+	}
+
 }
 
 .subscribe-btn {
@@ -167,6 +198,13 @@
 		height: 44px;
 	}
 
+	@media (max-width: 479px) and (min-width: 320px) {
+		font-size: 12px;
+		width: 60%;
+		height: 49px;
+	}
+
+
 	&:hover {
 		background-color: black;
 	}
@@ -195,6 +233,11 @@
 		top: 30px;
 	}
 
+	@media (max-width: 479px) and (min-width: 320px) {
+		width: 100%;
+		position: unset;
+	}
+
 	h1 {
 		margin-top: 10px;
 		font-weight: 900;
@@ -216,6 +259,11 @@
 		}
 
 		@media (max-width: 767px) and (min-width: 480px) {
+			margin-top: 22px;
+			font-size: 24px;
+		}
+
+		@media (max-width: 479px) and (min-width: 320px) {
 			margin-top: 22px;
 			font-size: 24px;
 		}
@@ -245,6 +293,11 @@
 			letter-spacing: 2.6px;
 			font-size: 12px;
 		}
+
+		@media (max-width: 479px) and (min-width: 320px) {
+			letter-spacing: 2.6px;
+			font-size: 12px;
+		}
 	}
 
 	p {
@@ -262,11 +315,17 @@
 			margin-top: 28px;
 			font-size: 10px;
 		}
+
+		@media (max-width: 479px) and (min-width: 320px) {
+			margin-top: 28px;
+			font-size: 10px;
+		}
 	}
 
 	img {
 		width: 584px;
 		height: 446px;
+		max-width: 100%;
 
 		@media (max-width: 1199px) and (min-width: 992px) {
 			width: 100%;
@@ -277,4 +336,8 @@
 .nl2-intro {
 	margin-top: 38px;
 	height: 107px;
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		height: unset;
+	}
 }

@@ -18,6 +18,10 @@
 	@media (max-width: 767px) and (min-width: 480px) {
 		width: 100%
 	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		width: 100%
+	}
 }
 
 .blog-block-container2 {
@@ -26,6 +30,10 @@
 	}
 
 	@media (max-width: 767px) and (min-width: 480px) {
+		display: none;
+	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
 		display: none;
 	}
 }
@@ -60,6 +68,10 @@
 	img {
 		width: 100%;
 		transition: all 500ms ease 0s;
+	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		width: 100%
 	}
 }
 
@@ -156,6 +168,16 @@
 	position: relative;
 	background: transparent;
 	text-align: left;
+	display: inline-block;
+
+	@media (max-width: 1199px) {
+		padding: 50px 5px 15px 30px;
+	}
+
+	@media (max-width: 479px) and (min-width: 320px) {
+		float: none;
+		width: unset;
+	}
 }
 
 .blog-text-inner {

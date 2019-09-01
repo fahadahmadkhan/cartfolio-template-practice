@@ -11,7 +11,12 @@ nav {
 	@media (max-width: 767px) and (min-width: 480px) {
 		display: none;
 	}
+
+	@media (max-width: 479px) {
+		display: none;
+	}
 }
+
 
 .nav-container {
 	margin-bottom: 0px;
