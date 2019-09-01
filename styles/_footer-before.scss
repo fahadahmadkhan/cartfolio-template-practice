@@ -551,14 +551,14 @@ footer {
 		display: inline;
 		float: right !important;
 	}
-}
 
-.material-icons.add,
-.material-icons.remove {
-	font-size: 20px;
-	color: #725ac1;
-}
+	.material-icons.add,
+	.material-icons.remove {
+		font-size: 20px;
+		color: #725ac1;
+	}
 
-.material-icons.remove {
-	display: none;
+	.material-icons.remove {
+		display: none;
+	}
 }
